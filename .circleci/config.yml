@@ -10,6 +10,9 @@ jobs:
       - run:
           name: something
           command: echo "hello world" > helloworld.txt
+      - run:
+          name: i have no idea what i'm doing
+          command: mkdir workspace
       - persist_to_workspace:
           root: workspace
           paths: helloworld.txt
